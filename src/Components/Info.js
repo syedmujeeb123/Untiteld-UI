@@ -5,7 +5,7 @@ import star from "../Components/images/star.svg";
 
 function Info() {
   return (
-    <div className="mt-12 px-6 flex flex-col md:flex-row items-start md:items-center justify-between border-b pb-12 gap-4">
+    <div className="mt-12 md:px-6 flex flex-col md:flex-row items-start md:items-center justify-between border-b pb-12 gap-4">
       {/* Text Section */}
       <div>
         <div className="font-bold text-xl">232 Stays in Melbourne</div>
