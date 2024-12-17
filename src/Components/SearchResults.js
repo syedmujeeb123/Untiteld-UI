@@ -7,6 +7,7 @@ import RadioBtn from "./Common/RadioBtn";
 import topLocation from "./images/topLocation.svg";
 import hanmBurger from "./images/hamburger.svg";
 import StarRating from "./StarRating";
+import Spinner from "./Common/Spinner";
 
 const info = [
   {
@@ -85,15 +86,19 @@ function SearchResults() {
       });
   }, []);
   if (loading) {
-    return <div>Loading...</div>;
+    return (
+      <div className="flex justify-center mt-6">
+        <Spinner />
+      </div>
+    );
   }
 
   return (
     <div className="mt-8">
       <div className="flex">
-        <div className="flex gap-2 px-2 text-sm">
-          <Button>Sort by date</Button>
-          <Button>Sort by price</Button>
+        <div className="flex gap-2 text-sm">
+          <Button padding={2}>Sort by date</Button>
+          <Button padding={2}>Sort by price</Button>
         </div>
         <div className="flex ml-auto">
           <img

@@ -18,7 +18,7 @@ function SearchBar() {
 
       {/* More Filters Button - Mobile View */}
       <div className="md:hidden block mt-2 w-screen">
-        <Button width={100}>
+        <Button width={92}>
           <span className="flex gap-2 items-center justify-center w-full">
             <img src={filterIcon} alt="filterIcon" />
             More filters
